@@ -1,6 +1,6 @@
 # Challenge_19_CryptoClustering
 
-<p><h2>Use of unsupervised learning to predict if cryptocurrencies are affected by 24-hour or 7-day price changes using the K-means model.</h2></p>
+<p><h2>Use of unsupervised learning to predict if cryptocurrencies are affected by 24-hour or 7-day price changes.</h2></p>
 
 <p>In this challenge the K-means module from scikit-learn was used to create clusters of Cryptocurrencies using price change percentage data over different periods of time. These include periods of: 24 hours, 7-days, 14-days, 30-days, 60-days, 200-days and 1 year.</p>
 
@@ -14,15 +14,15 @@
 
 <li>Use the 'elbow method' to find the best value for k Using the Original Scaled DataFrame:</li><ul>
 <li>The elbow method is used to determine the optimal number of clusters in a k-means clustering algorithm.</li>
-<li>It plots the variance (inertia) of the clusters against the number of clusters and identifies the "elbow" point in the plot. The elbow point represents the number of clusters where the decrease in variance starts to level off significantly.</li>
-<li>The value of the elbow point provides a balance between minimising within-cluster variance and avoiding excessive complexity.</li><ul>>
+<li>It plots the variance (inertia) of the clusters against the number of clusters and identifies the "elbow" point (or point of inflection) in the plot. The elbow point represents the number of clusters where the decrease in variance starts to level off significantly.</li>
+<li>The value of the point of inflection provides a balance between minimising within-cluster variance and avoiding excessive complexity.</li><ul>
 <li>The process involved creating a list with the number of k values from 1 to 11.</li>
 <li>Create an empty list to store the inertia values.</li>
 <li>Create a loop to compute the inertia for each value of k and asign to a dictionary to allow for plotting the elbow curve<./li>
-<li>Plot a line chart with the inertia values computed with the different values ofk to identify the optimal value for k.</li></ul>
-<li><b>The optimal value of k = 4.</b></li></ul>
+<li>Plot a line chart with the inertia values computed with the different values ofk to identify the optimal value for k.</li></ul></ul>
+<li><b>The optimal value of k = 4.</b></li>
 
-<li>Cluster Cryptocurrencies with K-means Using the Original Scaled Data<:/li><ul>
+<p><li>Cluster Cryptocurrencies with K-means Using the Original Scaled Data<:/li></:>p><ul>
 <li>K-means model initialised with the best value for k (4).</li>
 <li>Fit the K-means model using the original scaled DataFrame.</li>
 <li>TPredict the clusters to group the cryptocurrencies using the original scaled DataFrame.</li>
