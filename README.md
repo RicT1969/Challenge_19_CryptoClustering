@@ -47,9 +47,12 @@
 <li>Tighter clusters provide greater interpretability, revealing more defined patterns than in the original dataset.</li></ol>
 
 <p><b>Broader conclusions in relation to whether unsupervised learning can predict if cryptocurrencies are affected by 24-hour or 7-day price changes?</p></b>
-<p>The initial question asked whether unsupervised learning can be used to predict if cryptocurrencies are affected by 24-hour or 7-day price changes. In the case of clustering models, although they can provide insights into this topic, models like k-means are primarily exploratory and descriptive tools rather than predictive models.  Whilst we can observe distinct groups and potentially identify  patterns or characteristics within each cluster, the clusters only represent similarities in the data and do not necessarily capture relevant relationships or predict the future behavior based on specific time periods. To investigate further we would also need to employ predictive modeling techniques, such as regression or time series analysis. These models would take into account the historical price data and other factors that may indicate future price changes.</p>
+<p>The initial question asked whether unsupervised learning can be used to predict if cryptocurrencies are affected by 24-hour or 7-day price changes. Although clustering models can provide insights into this topic, models like k-means are primarily exploratory and descriptive tools rather than predictive models.  Whilst we can observe distinct groups and potentially identify patterns or characteristics within each cluster, the clusters only represent similarities in the data and do not necessarily capture relevant relationships or predict the future behavior based on specific time periods. To investigate further we would also need to employ predictive modeling techniques, such as regression or time series analysis.</p>
 
-<h2>Source</h2>
+<p><h3>Noted on code</h3></p>
+SciKit_learn produced a future warning that "the default value of `n_init` will change from 10 to 'auto' in 1.4". The warning would repeat many times over but was unrelated to any error. It meant that the code was  difficult to read and, when run, caused delay as it printed out for the number of times the model was iterated through a loop. In order to suppress this n_init was expressly set to 10. Adopting the future default altered the results. Hence there is the addition to the relvant lines of code of <b></b>n_init = 10</b>.
+
+<h2>Sources</h2>
 https://holoviz.org/tutorial/Composing_Plots.html
 https://hvplot.holoviz.org/user_guide/Plotting.html
 https://stackoverflow.com/questions/58086573/set-title-to-a-simple-holoviews-plot-python
